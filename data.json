@@ -1,9 +1,25 @@
+{
+  "name": "New Category",
+  "description": "Description of the new category",
+  "parent": null,
+  "is_active": true,
+  "image": null,
+  "order": 0
+}
+{
+  "name": "New Subcategory",
+  "description": "Description of the new subcategory",
+  "parent": 7,
+  "is_active": true,
+  "image": null,
+  "order": 0
+}
 // Example 1: Product without variants (is_variant: false)
 {
   "name": "Basic T-Shirt",
   "description": "Comfortable cotton T-shirt for everyday wear",
   "price": 19.99,
-  "product_type_id": 2,
+  "product_type_id":"Nurcery",
   "brand_id": 5,
   "category_ids": [10],
   "is_variant": false,
@@ -41,7 +57,7 @@
   "name": "Deluxe Smartphone",
   "description": "High-end smartphone with multiple storage and color options",
   "price": 799.99,
-  "product_type_id": 1,
+  "product_type_id": "Nurcery,
   "brand_id": 3,
   "category_ids": [5],
   "is_variant": true,
