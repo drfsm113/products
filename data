@@ -1,0 +1,111 @@
+// Example 1: Product without variants (is_variant: false)
+{
+  "name": "Basic T-Shirt",
+  "description": "Comfortable cotton T-shirt for everyday wear",
+  "price": 19.99,
+  "product_type_id": 2,
+  "brand_id": 5,
+  "category_ids": [10],
+  "is_variant": false,
+  "is_active": true,
+  "tags": [
+    {
+      "name": "Apparel",
+      "description": "Clothing item"
+    },
+    {
+      "name": "Casual",
+      "description": "For casual wear"
+    }
+  ],
+  "product_images": [
+    {
+      "image": "path/to/tshirt_front.jpg",
+      "alt_text": "T-shirt front view",
+      "is_primary": true,
+      "order": 1,
+      "is_active": true
+    },
+    {
+      "image": "path/to/tshirt_back.jpg",
+      "alt_text": "T-shirt back view",
+      "is_primary": false,
+      "order": 2,
+      "is_active": true
+    }
+  ]
+}
+
+// Example 2: Product with variants (is_variant: true)
+{
+  "name": "Deluxe Smartphone",
+  "description": "High-end smartphone with multiple storage and color options",
+  "price": 799.99,
+  "product_type_id": 1,
+  "brand_id": 3,
+  "category_ids": [5],
+  "is_variant": true,
+  "is_active": true,
+  "tags": [
+    {
+      "name": "Electronics",
+      "description": "Electronic device"
+    },
+    {
+      "name": "Smartphone",
+      "description": "Mobile communication device"
+    }
+  ],
+  "variants": [
+    {
+      "name": "Deluxe Smartphone 128GB Black",
+      "price_adjustment": 0,
+      "stock_quantity": 100,
+      "is_active": true,
+      "attribute_values": [
+        {
+          "attribute_id": 1,
+          "value": "128GB"
+        },
+        {
+          "attribute_id": 2,
+          "value": "Black"
+        }
+      ],
+      "product_variant_images": [
+        {
+          "image": "path/to/smartphone_128gb_black.jpg",
+          "alt_text": "Deluxe Smartphone 128GB in Black",
+          "is_primary": true,
+          "order": 1,
+          "is_active": true
+        }
+      ]
+    },
+    {
+      "name": "Deluxe Smartphone 256GB Silver",
+      "price_adjustment": 100,
+      "stock_quantity": 75,
+      "is_active": true,
+      "attribute_values": [
+        {
+          "attribute_id": 1,
+          "value": "256GB"
+        },
+        {
+          "attribute_id": 2,
+          "value": "Silver"
+        }
+      ],
+      "product_variant_images": [
+        {
+          "image": "path/to/smartphone_256gb_silver.jpg",
+          "alt_text": "Deluxe Smartphone 256GB in Silver",
+          "is_primary": true,
+          "order": 1,
+          "is_active": true
+        }
+      ]
+    }
+  ]
+}
